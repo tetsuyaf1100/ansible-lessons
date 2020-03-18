@@ -24,7 +24,7 @@ Ansibleが実行されるノード
 
  ssh-copy-id コマンドを実行すると、ターゲットノードの　~/.ssh/authorized_keys に公開鍵が追加される
 
-## サンプル
+## サンプル ansible コマンド
 コントロールノードにinventoryファイルを配置
 inventoryファイルにターゲットノードを記載する
 ここでは、inventoryファイルをhostsとする
@@ -42,6 +42,8 @@ ping コマンドを打つ場合
 ```
 ansible -i hosts -m ping
 ```
+
+## サンプル ansible-playbook コマンド
 
 ansible-playbookを使用する場合は、yamlファイルを配置する
 yamlファイルに実行したいことを記載する
